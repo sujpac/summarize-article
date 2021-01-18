@@ -1,5 +1,6 @@
 from newspaper import Article
 
+# Unneeded imports:
 # import nltk
 # pip install nltk
 # pip install newspaper3k
@@ -9,13 +10,12 @@ article = Article(url)
 article.download()
 article.parse()
 article.nlp()
-'''
-useful_state = [
-    article.authors,
-    article.publish_date,
-    article.top_image,
-    article.keywords,
-    article.text,
-]
-'''
+# additional article properties
+# useful_state = [
+#     article.authors,
+#     article.publish_date,
+#     article.top_image,
+#     article.keywords,
+#     article.text,
+# ]
 print('Article Summary:\n', article.summary)

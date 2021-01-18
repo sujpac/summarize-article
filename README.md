@@ -1,9 +1,13 @@
-# summarize-article
+# Summarize-article
 
-A script that generates a summary of an article from the Internet.
+summarize-article/make_summary.py is a Python script that takes an article as input (via URL) and generates a short summary of the article's contents.
 
-### Input
-article_url
+## Installation
+```bash
+sudo python3 -m pip install newspaper3k
+```
 
-### Output
-summary_text
+## Command-Line Usage
+```bash
+python3 make_summary.py <article_URL>
+```
